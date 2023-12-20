@@ -6,6 +6,7 @@
 #title-container h1 {
   font-family: "Rubik Doodle Shadow", Times New Roman, Times, serif;
   font-size: 50px;
+  margin: 0;
 }
 
 #text-container {
@@ -16,20 +17,21 @@
 #text-container p {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
+  margin-top: 10px;
 }
 
 #hangman-img-container {
-  margin: 40px;
+  margin: 10px;
 }
 
 #hangman-img {
   margin: auto;
-  height: 200px;
+  height: 180px;
   display: block;
 }
 
 #guess-word {
-  margin: 40px;
+  margin: 10px;
   display: flex;
   justify-content: center;
 }
