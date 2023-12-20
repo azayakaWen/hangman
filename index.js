@@ -127,6 +127,7 @@ const words = [
 
 //Get random word from array
 const word = words[Math.floor(Math.random() * words.length)];
+console.log(word);
 
 //Replace letters of random word with _
 const replaceLetters = (word) => {
@@ -185,15 +186,6 @@ letters.forEach((letter) => {
 let incorrectGuesses = 0;
 const maxGuesses = 10;
 
-//Render Image
-// const imgContainer = document.getElementById("hangman-img-container");
-
-// if (incorrectGuesses === 0) {
-//   imgContainer.style.display = "none";
-// } else {
-//   imgContainer.style.display = "block";
-// }
-
 //Update hangman image
 const updateHangmanImg = () => {
   const hangmanImg = document.getElementById("hangman-img");
@@ -231,7 +223,10 @@ const checkSelectedLetter = (selectedLetter, word) => {
 
     if (incorrectGuesses >= maxGuesses) {
       setTimeout(() => {
-        alert("Game Over! YOU SUCK!", window.location.reload());
+        alert(
+          `Game Over! YOU SUCK! Correct word: ${word}`,
+          window.location.reload()
+        );
       }, 500);
     }
   }
