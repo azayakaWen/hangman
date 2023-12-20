@@ -127,7 +127,6 @@ const words = [
 
 //Get random word from array
 const word = words[Math.floor(Math.random() * words.length)];
-console.log(word);
 
 //Replace letters of random word with _
 const replaceLetters = (word) => {
