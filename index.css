@@ -1,0 +1,73 @@
+#title-container {
+  display: flex;
+  justify-content: center;
+}
+
+#title-container h1 {
+  font-family: "Rubik Doodle Shadow", Times New Roman, Times, serif;
+  font-size: 50px;
+}
+
+#text-container {
+  display: flex;
+  justify-content: center;
+}
+
+#text-container p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#hangman-img-container {
+  margin: 40px;
+}
+
+#hangman-img {
+  margin: auto;
+  height: 200px;
+  display: block;
+}
+
+#guess-word {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+#guess-word p {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.btn {
+  margin: auto;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(235, 230, 230);
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  font-family: "Courier New", Courier, monospace;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #btn-container {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
